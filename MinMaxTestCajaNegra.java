@@ -46,21 +46,21 @@ public class MinMaxTestCajaNegra {
 	@Test
 	public void testArrayDeUnValor(){
 		int [] xs4_s= new int []{3,3};
-		assertEquals("Array de una dimensión" ,xs4_s, array4);
+		assertArrayEquals("Array de una dimensión" ,xs4_s, array4);
 	}
 	
 	@Test
 	public void testArrayDeCeros(){
 		int [] xs5_s= new int []{0,0};
-		assertEquals("Array de ceros" ,xs5_s, array5);
+		assertArrayEquals("Array de ceros" ,xs5_s, array5);
 	}
 	
 	@Test
 	public void testArrayValido(){
 		int [] xs2_s= new int []{-2147483648,2147483647};
-		assertEquals("Array válido" ,xs2_s, array2);
+		assertArrayEquals("Array válido" ,xs2_s, array2);
 	}
-	
+	/*
 	@Test
 	public void testValorMinimo(){
 		assertTrue(array2[0]>=(-2147483648));
@@ -74,6 +74,6 @@ public class MinMaxTestCajaNegra {
 	@Test
 	public void testFueraDeRango(){
 		assertTrue((array2[1]<=2147483647)&& (array2[0]>=-2147483648));
-	}
+	}*/
 	
 	}

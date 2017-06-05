@@ -3,20 +3,28 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class MinMaxCiclomatica {
-	
+	public int c0 [];
 	public int c1 [];
 	public int c2 []; 
 	public int c3 [];
 	public int c4 [];
 	public int c5 [];
 	
+	
 	@Before
 	public void Inicializar(){
-		c1= null;
+		c0 = new int[]{};
+		c1 = null;
 		c2 = new int []{7};
 		c3 = new int []{5,3};
 		c4 = new int []{3,5};
 		c5 = new int []{2,2};
+	}
+	
+	@Test
+	public void Camino0(){
+		//C1: 1, 2, 11 
+		MinMax.minMax(c0);
 	}
 
 	@Test
